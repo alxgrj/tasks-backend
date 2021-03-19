@@ -36,7 +36,7 @@ pipeline {
         } 
         stage ('API Test') {
             steps {
-                git credentialsId: git 'https://github.com/wcaquino/tasks-api-test'
+                git 'https://github.com/wcaquino/tasks-api-test'
                 bat 'mvn test'
             }
         }    
